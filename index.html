@@ -339,7 +339,7 @@
         <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
         Get in Touch
       </a>
-      <a href="Anand_Pandey_Resume.html" target="_blank" class="btn-ghost">
+      <a href="#" onclick="openResume(event)" class="btn-ghost">
         <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
         Resume
       </a>
@@ -585,9 +585,9 @@
         <h3>Want the full picture?</h3>
         <p>Download my resume for a complete overview of skills, projects and achievements.</p>
       </div>
-      <a href="Anand_Pandey_Resume.html" target="_blank" class="btn-primary" style="white-space:nowrap;">
+      <a href="#" onclick="openResume(event)" class="btn-primary" style="white-space:nowrap;">
         <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
-        Download Resume
+        View Resume
       </a>
       <a href="https://www.linkedin.com/in/anand-pandey-a22b28323" target="_blank" class="btn-ghost" style="white-space:nowrap;">
         <svg width="16" height="16" fill="#0a66c2" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
@@ -709,13 +709,20 @@
     <div style="display:flex;gap:1rem;">
       <a href="https://github.com/AnandPandey" target="_blank" style="color:var(--muted);text-decoration:none;font-size:0.82rem;transition:color 0.2s;" onmouseenter="this.style.color='var(--accent)'" onmouseleave="this.style.color='var(--muted)'">GitHub</a>
       <a href="https://www.linkedin.com/in/anand-pandey-a22b28323" target="_blank" style="color:var(--muted);text-decoration:none;font-size:0.82rem;transition:color 0.2s;" onmouseenter="this.style.color='var(--accent)'" onmouseleave="this.style.color='var(--muted)'">LinkedIn</a>
-      <a href="/cdn-cgi/l/email-protection#d1b0a1e8e1e0e3e8e3e991b6bcb0b8bdffb2bebc" style="color:var(--muted);text-decoration:none;font-size:0.82rem;transition:color 0.2s;" onmouseenter="this.style.color='var(--accent)'" onmouseleave="this.style.color='var(--muted)'">Email</a>
+      <a href="mailto:ap9012928@gmail.com" style="color:var(--muted);text-decoration:none;font-size:0.82rem;transition:color 0.2s;" onmouseenter="this.style.color='var(--accent)'" onmouseleave="this.style.color='var(--muted)'">Email</a>
     </div>
     <div style="font-size:0.78rem;">Designed &amp; built with ❤️ · <span style="color:#2563eb;">2025</span></div>
   </div>
 </footer>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+
+  // Open resume in new tab
+  function openResume(e) {
+    e.preventDefault();
+    window.open('Anand_Pandey_Resume.html', '_blank');
+  }
+
   // Cursor glow
   const glow = document.getElementById('cursorGlow');
   document.addEventListener('mousemove', e => { glow.style.left = e.clientX+'px'; glow.style.top = e.clientY+'px'; });
@@ -793,6 +800,6 @@
     const rect = b.getBoundingClientRect();
     if (rect.top < window.innerHeight) b.classList.add('animated');
   });
-</script>
+</script> 
 </body>
 </html>
